@@ -11,7 +11,9 @@ public class Logintest {
   @Test
   public void login() {
 	  System.setProperty("webdriver.chrome.driver", "G:\\chrome driver 111\\chromedriver.exe");
-		WebDriver d=new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--remote-allow-origins=*");
+		WebDriver d= new ChromeDriver(options);
 		d.manage().window().maximize();  
 		
 		d.get("https://test.vaccineledger.com/");
@@ -44,7 +46,9 @@ public class Signup {
   @Test
   public void signup() {
 	  System.setProperty("webdriver.chrome.driver", "G:\\chrome driver 111\\chromedriver.exe");
-		WebDriver d=new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--remote-allow-origins=*");
+		WebDriver d= new ChromeDriver(options);
 		d.manage().window().maximize();  
 		
 		d.get("https://test.vaccineledger.com/");
