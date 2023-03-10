@@ -64,7 +64,7 @@ public class Signup {
 		
 		d.findElement(By.name("organizationExists")).click();
 		
-		d.findElement(By.id("ArrowDropDownIcon")).sendKeys("PHARMACY");
+		d.findElement(By.tagName("input")).sendKeys("PHARMACY");
 		
 		d.findElement(By.xpath("//*[@id=\"root\"]/div/div/section/div/div[2]/div[2]/div/section/div/form/section[3]/button")).click();
 			
