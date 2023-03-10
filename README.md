@@ -54,15 +54,17 @@ public class Signup {
 		
 		d.findElement(By.xpath("//*[@id=\"root\"]/div/div/header/div/nav/ul/li[6]/button")).click();
 		
-		d.findElement(By.name("firstname")).sendKeys("Harish");
+		d.findElement(By.id("mui-2")).sendKeys("Harish");
 		
-		d.findElement(By.name("lastame")).sendKeys("Sarnala");
+		d.findElement(By.id("mui-3")).sendKeys("Sarnala");
 		
-		d.findElement(By.name("email")).sendKeys("sarnalaharish@gmail.com");
+		d.findElement(By.id("mui-4")).sendKeys("sarnalaharish@gmail.com");
 		
 		d.findElement(By.name("phone")).sendKeys("9912944429");
 		
-		d.findElement(By.name("organization exists")).click();
+		d.findElement(By.name("organizationExists")).click();
+		
+		d.findElement(By.id("ArrowDropDownIcon")).sendKeys("PHARMACY");
 		
 		d.findElement(By.xpath("//*[@id=\"root\"]/div/div/section/div/div[2]/div[2]/div/section/div/form/section[3]/button")).click();
 			
