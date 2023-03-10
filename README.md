@@ -22,13 +22,12 @@ public class Logintest {
 		
 		d.findElement(By.xpath("//*[@id=\"root\"]/div/div/section[1]/div/div/article[2]/div/form/div[2]/button")).click();
 		
-		d.findElement(By.name("otp0")).sendKeys("1");
 		
-		d.findElement(By.name("otp1")).sendKeys("2");
-		
-		d.findElement(By.name("otp2")).sendKeys("3");
-		
-		d.findElement(By.name("otp3")).sendKeys("4");
+		Thread.sleep(2000);
+		d.findElement(By.id("otp0")).sendKeys("1");
+		d.findElement(By.id("otp1")).sendKeys("2");
+		d.findElement(By.id("otp2")).sendKeys("3");
+		d.findElement(By.id("otp3")).sendKeys("4");
 		
 		d.findElement(By.xpath("//*[@id=\"root\"]/div/div/section/div/div[2]/div[2]/div/section/div/form/section[2]/button")).click();
 }
